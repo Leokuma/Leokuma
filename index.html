@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Leonardo Marinho Okuma</title>
+
+	<style>
+		/* * {border: 1px solid black;} */
+
+		/* @todo Dark mode */
+
+		:root {
+			--border: solid 1px var(--secondary-color);
+			--primary-color: #222;
+			--secondary-color: #ccc;
+			background-color: #eee;
+			color: var(--primary-color);
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 14px;
+		}
+
+		a {
+			color: var(--primary-color);
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 1.4rem;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		header span {
+			font-size: 1.5rem;
+		}
+
+		li {
+			line-height: 1.9rem;
+			list-style: "🔹";
+		}
+
+		p {
+			margin-top: 0;
+			text-align: justify;
+		}
+
+		ul {
+			margin: 0;
+			padding-left: 1.5rem;
+		}
+	</style>
+
+	<style>
+		#page {
+			background-color: #fff;
+			margin: auto;
+			max-width: 1000px;
+		}
+
+		@media screen {
+			#page {
+				box-shadow: 0 0 30px #999;
+				padding: 40px;
+			}
+		}
+
+		.topic-section > .title > .icon {
+			height: 1.3rem;
+			margin-right: .4rem;
+		}
+
+		.topic-table {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+		}
+
+		.topic-table > * {
+			padding: 10px;
+		}
+
+		.topic-table > .entry {
+			border-right: var(--border);
+			font-weight: bold;
+			text-align: end;
+		}
+
+		.topic-section:not(:first-of-type) > .title {
+			margin-top: 2.1rem;
+		}
+
+		.topic-table > :not(:nth-last-of-type(-n+2)) {
+			border-bottom: var(--border);
+		}
+
+		.scores {
+			column-gap: 2rem;
+			display: grid;
+			grid-template-columns: auto 1fr;
+			row-gap: .7rem;
+		}
+
+		meter {
+			height: 15px;
+			width: 100%;
+		}
+	</style>
+
+	<style>
+		@media print {
+			#page {
+				box-shadow: none;
+				padding: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+<div id="page">
+	<header>
+		<h1>Leonardo Okuma</h1>
+		<span>Tech Lead</span>
+	</header>
+
+	<main>
+		<section class="topic-section">
+			<h2 class="title">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zm128-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+				Contact
+			</h2>
+
+			<div class="topic-table">
+				<div class="entry">Github</div>
+				<div class="description">
+					<a href="https://github.com/Leokuma" target="_blank" rel="noreferrer">https://github.com/Leokuma</a>
+				</div>
+
+				<div class="entry">Linked-in</div>
+				<div class="description">
+					<a href="https://br.linkedin.com/in/leokuma" target="_blank" rel="noreferrer">https://br.linkedin.com/in/leokuma</a>
+				</div>
+
+				<div class="entry">Address</div>
+				<div class="description">Brazil, São Paulo - SP</div>
+			</div>
+		</section>
+
+		<section class="topic-section">
+			<h2 class="title">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M224 0c70.7 0 128 57.3 128 128s-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0zM209.1 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2H224h19.7c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 39.5-161.2c77.2 12 136.3 78.8 136.3 159.4c0 17-13.8 30.7-30.7 30.7H265.1 182.9 30.7C13.8 512 0 498.2 0 481.3c0-80.6 59.1-147.4 136.3-159.4l39.5 161.2 33.4-123.9z"/></svg>
+				Professional experience
+			</h2>
+
+			<div class="topic-table">
+				<div class="entry">Tech Lead at <a href="https://zptdigital.com.br/" target="_blank" rel="noreferrer">ZPT Digital</a></div>
+				<div class="description">
+					<ul>
+						<li>PHP (both pure and with Symfony)</li>
+						<li>JS, HTML, CSS</li>
+						<li>Vue 2</li>
+						<li>SASS (CSS)</li>
+						<li>MySQL and SQL Server</li>
+						<li>Playwright for E2E testing</li>
+						<li>API development for mobile apps and websites</li>
+						<li>Development and maintenance of BitBucket deploy pipelines (CI)</li>
+						<li>Monitoring and maintenance of production and QA servers (AWS Ubuntu)</li>
+						<li>Coordination of development and QA teams</li>
+						<li>Elaboration of technical specifications for projects that were developed by freelance developers</li>
+						<li>Scrum methodology</li>
+						<li>Weekly meetings with customers in order to follow and identify project requirements</li>
+						<li>Jira</li>
+					</ul>
+				</div>
+
+				<div class="entry">Senior Developer at <a href="https://www.textecnologia.com.br/" target="_blank" rel="noreferrer">Tex Tecnologia</a></div>
+				<div class="description">
+					<ul>
+						<li>OCR: autofilling form from an input PDF</li>
+						<li>Design, implementation and consumption of web services, OpenAPIs and GraphQL APIs based on JWT authentication</li>
+						<li>Elaboration of technical documentation for both internal and external use by third parties</li>
+						<li>MySQL: reports, database modelling, triggers, views and stored procedures</li>
+					</ul>
+				</div>
+
+				<div class="entry">Intern at <a href="https://sesin.fr/">Sesin</a></div>
+				<div class="description">
+					<ul>
+						<li>PHP (proprietary framework)</li>
+						<li>PostgreSQL</li>
+						<li>JS, HTML, CSS</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="topic-section">
+			<h2 class="title">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM104 432c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"/></svg>
+				Skills
+			</h2>
+
+			<div class="topic-table">
+				<div class="entry">Fundamentals</div>
+				<div class="scores">
+					<div>Programming logic</div><div><meter value="9" max="10"></meter></div>
+					<div>Code organization</div><div><meter value="10" max="10"></meter></div>
+					<div>Object orientation</div><div><meter value="8" max="10"></meter></div>
+					<div>Functional programming</div><div><meter value="8" max="10"></meter></div>
+					<div>Relational database modelling</div><div><meter value="8" max="10"></meter></div>
+					<div>SQL</div><div><meter value="9" max="10"></meter></div>
+					<div>Git</div><div><meter value="8" max="10"></meter></div>
+				</div>
+
+				<div class="entry">Technologies and tools</div>
+				<div class="scores">
+					<div>CSS (including Flexbox and Grid)</div><div><meter value="7" max="10"></meter></div>
+					<div>Deno</div><div><meter value="8" max="10"></meter></div>
+					<div>Figma</div><div><meter value="8" max="10"></meter></div>
+					<div>HTML</div><div><meter value="7" max="10"></meter></div>
+					<div>Java</div><div><meter value="4" max="10"></meter></div>
+					<div>JavaScript</div><div><meter value="9" max="10"></meter></div>
+					<div>Jira (as user and administrator)</div><div><meter value="8" max="10"></meter></div>
+					<div>Lit</div><div><meter value="6" max="10"></meter></div>
+					<div>MongoDB</div><div><meter value="6" max="10"></meter></div>
+					<div>MySQL</div><div><meter value="9" max="10"></meter></div>
+					<div>NodeJS</div><div><meter value="6" max="10"></meter></div>
+					<div>npm</div><div><meter value="6" max="10"></meter></div>
+					<div>PHP</div><div><meter value="8" max="10"></meter></div>
+					<div>Playwright</div><div><meter value="6" max="10"></meter></div>
+					<div>PostgreSQL</div><div><meter value="5" max="10"></meter></div>
+					<div>Preact (including Hooks)</div><div><meter value="5" max="10"></meter></div>
+					<div>PWA</div><div><meter value="4" max="10"></meter></div>
+					<div>React (including Hooks)</div><div><meter value="5" max="10"></meter></div>
+					<div>React Native (with Expo)</div><div><meter value="4" max="10"></meter></div>
+					<div>Redis</div><div><meter value="7" max="10"></meter></div>
+					<div>Rust</div><div><meter value="4" max="10"></meter></div>
+					<div>SVG</div><div><meter value="8" max="10"></meter></div>
+					<div>Symfony</div><div><meter value="4" max="10"></meter></div>
+					<div>TypeScript</div><div><meter value="8" max="10"></meter></div>
+					<div>Vue 2 and 3</div><div><meter value="5" max="10"></meter></div>
+					<div>Web Components</div><div><meter value="10" max="10"></meter></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="topic-section">
+			<h2 class="title" style="break-before: page">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/></svg>
+				Personal projects
+			</h2>
+
+			<div class="topic-table">
+				<div class="entry">Hangman Discord Bot</div>
+				<div class="description">
+					<p>Hangman is a Discord bot that allows playing Hangman on Discord. Its primary purpose is to help people learn English.</p>
+					<p>The bot is available in probably the biggest Discord community for people who want to learn languages (over 5k members). The community is a reminiscent of the old language websites SharedTalk and HelloLingo.</p>
+					<p>The bot is integrated with the <a href="https://www.collinsdictionary.com/" target="_blank" rel="noreferrer">Collins Dictionary</a> API.</p>
+					<p>Stack:</p>
+					<ul>
+						<li>Deno (hosted at Heroku inside a Docker container)</li>
+						<li>TypeScript</li>
+						<li>MongoDB (Atlas cloud)</li>
+						<li>Redis (redis.com cloud)</li>
+					</ul>
+					<br/>
+					<p>Discord server: <a href="https://discord.gg/NSEF7JWEgz" target="_blank" rel="noreferrer">https://discord.gg/NSEF7JWEgz</a>.</p>
+					<p>Repository: <a href="https://github.com/Leokuma/hangman" target="_blank" rel="noreferrer">https://github.com/Leokuma/hangman</a>.</p>
+				</div>
+
+				<div class="entry">WhatsApp Chatbot</div>
+				<div class="description">
+					<p>Browser-based MVC chatbot integrated with <a href="https://www.cleverbot.com/" target="_blank" rel="noreferrer">Cleverbot</a>.</p>
+					<p>The purpose of this project was to experiment with the MVC architecture and have fun.</p>
+					<p>Repository: <a href="https://github.com/JSquadders/ChatBot" target="_blank" rel="noreferrer">https://github.com/JSquadders/ChatBot</a>.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="topic-section">
+			<h2 class="title">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+				Educational background
+			</h2>
+
+			<div class="topic-table">
+				<div class="entry">Vue Mastery</div>
+				<div class="description">Vue 3: Deep Dive course.</div>
+
+				<div class="entry">Alura</div>
+				<div class="description">Advanced JavaScript III course.</div>
+
+				<div class="entry">Faculdade de Tecnologia de São Paulo</div>
+				<div class="description">Superior degree in Systems Development and Analysis.</div>
+
+				<div class="entry">Etec Parque da Juventude</div>
+				<div class="description">Technical course in Informatics.</div>
+
+				<div class="entry">Instituto Federal de Educação Tecnológica de São Paulo</div>
+				<div class="description">Highschool.</div>
+
+				<div class="entry">Wizard</div>
+				<div class="description">English course.</div>
+			</div>
+		</section>
+
+		<section class="topic-section">
+			<h2 class="title">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+				Personality traits
+			</h2>
+			<ul>
+				<li>Self-learning</li>
+				<li>Self-motivation</li>
+				<li>Self-management</li>
+				<li>Always open to discussions and new ideas</li>
+				<li>Loves being helpful to open communities (Open Source Software, MDN, Wikipedia etc)</li>
+				<li>Passion for creating things</li>
+				<li>Obsessed with organization and clarity, both in terms of code and communication in general</li>
+				<li>Interdisciplinary approach</li>
+				<li>Perfectionism</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+	</footer>
+
+</div>
+</body>
+</html>
