@@ -9,13 +9,27 @@
 	<style>
 		/* * {border: 1px solid black;} */
 
-		/* @todo Dark mode */
-
 		:root {
+			--background-color: #eee;
 			--border: solid 1px var(--secondary-color);
+			--page-color: #fff;
+			--page-shadow: 0 0 30px #999;
 			--primary-color: #222;
 			--secondary-color: #ccc;
-			background-color: #eee;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--background-color: #000;
+				--page-color: #111;
+				--page-shadow: none;
+				--primary-color: #ddd;
+				--secondary-color: #333;
+			}			
+		}
+
+		:root {
+			background-color: var(--background-color);
 			color: var(--primary-color);
 			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 			font-size: 14px;
@@ -60,14 +74,14 @@
 
 	<style>
 		#page {
-			background-color: #fff;
+			background-color: var(--page-color);
 			margin: auto;
 			max-width: 1000px;
 		}
 
 		@media screen {
 			#page {
-				box-shadow: 0 0 30px #999;
+				box-shadow: var(--page-shadow);
 				padding: 40px;
 			}
 		}
