@@ -1,0 +1,21 @@
+:root {
+	--background-color: #eee;
+	--border: solid 1px var(--secondary-color);
+	--highlight-color: #d21c6e;
+	--page-color: #fff;
+	--page-shadow: 0 0 30px #999;
+	--page-margin: 40px;
+	--primary-color: #222;
+	--secondary-color: #ccc;
+	--target-border: .2rem solid var(--target-color);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #000;
+		--page-color: #111;
+		--page-shadow: none;
+		--primary-color: #ddd;
+		--secondary-color: #333;
+	}
+}

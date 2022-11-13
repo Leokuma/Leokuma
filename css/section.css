@@ -1,0 +1,38 @@
+/* .topic-section {
+	min-height: 400px;
+} */
+
+.topic-section > .title > .icon {
+	height: 1.3rem;
+	margin-right: .4rem;
+}
+
+.topic-table {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+}
+
+.topic-table > * {
+	padding: 10px;
+}
+
+.topic-table > .entry {
+	border-right: var(--border);
+	font-weight: bold;
+	text-align: end;
+}
+
+.topic-section:not(:first-of-type) > .title {
+	margin-top: 2.1rem;
+}
+
+.topic-table > :not(:nth-last-of-type(-n+2)) {
+	border-bottom: var(--border);
+}
+
+.scores {
+	column-gap: 2rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	row-gap: .7rem;
+}

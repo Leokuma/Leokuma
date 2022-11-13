@@ -1,174 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	<title>Leonardo Okuma</title>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Leonardo Okuma</title>
+	<link rel="stylesheet" href="/css/theme.css"/>
+	<link rel="stylesheet" href="/css/global.css"/>
+	<link rel="stylesheet" href="/css/page.css"/>
+	<link rel="stylesheet" href="/css/section.css"/>
+	<link rel="stylesheet" href="/css/print.css"/>
 
-	<style>
-		/* * {border: 1px solid black;} */
+	<script type="module">
+		import * as Dict from '/js/i18n/dict.mjs';
+		import * as Lang from '/js/i18n/lang.mjs';
 
-		:root {
-			--background-color: #eee;
-			--border: solid 1px var(--secondary-color);
-			--page-color: #fff;
-			--page-shadow: 0 0 30px #999;
-			--primary-color: #222;
-			--secondary-color: #ccc;
-			--target-border: .2rem solid var(--target-color);
-			--target-color: #c60f5f;
-		}
+		const dictDownload = Dict.download(Lang.get());
 
-		@media (prefers-color-scheme: dark) {
-			:root {
-				--background-color: #000;
-				--page-color: #111;
-				--page-shadow: none;
-				--primary-color: #ddd;
-				--secondary-color: #333;
-			}
-		}
+		window.langApply = Lang.apply;
 
-		:root {
-			background-color: var(--background-color);
-			color: var(--primary-color);
-			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-			font-size: 14px;
-		}
-
-		*:target {
-			border: var(--target-border);
-		}
-
-		a {
-			color: var(--primary-color);
-		}
-
-		h1 {
-			font-size: 2rem;
-			margin: 0;
-		}
-
-		h2 {
-			font-size: 1.4rem;
-		}
-
-		header {
-			text-align: center;
-		}
-
-		header span {
-			font-size: 1.5rem;
-		}
-
-		li {
-			line-height: 1.9rem;
-			list-style: "🔹";
-		}
-
-		p {
-			margin-top: 0;
-			text-align: justify;
-		}
-
-		ul {
-			margin: 0;
-			padding-left: 1.5rem;
-		}
-	</style>
-
-	<style>
-		#page {
-			background-color: var(--page-color);
-			margin: auto;
-			max-width: 1000px;
-		}
-
-		@media screen {
-			#page {
-				box-shadow: var(--page-shadow);
-				padding: 40px;
-			}
-		}
-
-		.topic-section > .title > .icon {
-			height: 1.3rem;
-			margin-right: .4rem;
-		}
-
-		.topic-table {
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-		}
-
-		.topic-table > * {
-			padding: 10px;
-		}
-
-		.topic-table > .entry {
-			border-right: var(--border);
-			font-weight: bold;
-			text-align: end;
-		}
-
-		.topic-section:not(:first-of-type) > .title {
-			margin-top: 2.1rem;
-		}
-
-		.topic-table > :not(:nth-last-of-type(-n+2)) {
-			border-bottom: var(--border);
-		}
-
-		.scores {
-			column-gap: 2rem;
-			display: grid;
-			grid-template-columns: auto 1fr;
-			row-gap: .7rem;
-		}
-
-		meter {
-			height: 15px;
-			width: 100%;
-		}
-	</style>
-
-	<style>
-		@media print {
-			#page {
-				box-shadow: none;
-				padding: 0;
-			}
-		}
-	</style>
+		document.addEventListener('DOMContentLoaded', async () => {
+			Dict.apply(await dictDownload);
+			document.querySelector('main').style.opacity = 1;
+		});
+	</script>
 </head>
 
 <body>
 <div id="page">
-	<header>
+	<header contenteditable="true">
+		<div class="lang-selector" contenteditable="false">
+			<input class="flag" onchange="langApply('en')" type="radio" name="lang" value="en" title="English" alt="English" style="background-image: url('/img/flag-en.png');"/>
+			<input class="flag" onchange="langApply('pt')" type="radio" name="lang" value="pt" title="Português" alt="Português" style="background-image: url('/img/flag-pt.png');"/>
+		</div>
 		<h1>Leonardo Okuma</h1>
 		<span>Tech Lead</span>
 	</header>
 
-	<main>
+	<main contenteditable="true">
 		<section class="topic-section">
 			<h2 class="title">
 				<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#222" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zm128-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-				Contact
+				<span data-dict="contact.contact"/>
 			</h2>
 
 			<div class="topic-table">
 				<div class="entry">Github</div>
 				<div class="description">
-					<a href="https://github.com/Leokuma" target="_blank" rel="noreferrer">https://github.com/Leokuma</a>
+					<a href="https://github.com/Leokuma" contenteditable="false" target="_blank" rel="noreferrer">https://github.com/Leokuma</a>
 				</div>
 
 				<div class="entry">Linked-in</div>
 				<div class="description">
-					<a href="https://br.linkedin.com/in/leokuma" target="_blank" rel="noreferrer">https://br.linkedin.com/in/leokuma</a>
+					<a href="https://br.linkedin.com/in/leokuma" contenteditable="false" target="_blank" rel="noreferrer">https://br.linkedin.com/in/leokuma</a>
 				</div>
 
-				<div class="entry">Address</div>
+				<div class="entry" data-dict="contact.address">Address</div>
 				<div class="description">Brazil, São Paulo - SP</div>
 			</div>
 		</section>
@@ -180,7 +68,7 @@
 			</h2>
 
 			<div class="topic-table">
-				<div class="entry">Tech Lead at <a href="https://zptdigital.com.br/" target="_blank" rel="noreferrer">ZPT Digital</a></div>
+				<div class="entry">Tech Lead at <a href="https://zptdigital.com.br/" contenteditable="false" target="_blank" rel="noreferrer">ZPT Digital</a></div>
 				<div class="description">
 					<ul>
 						<li>PHP (both pure and with Symfony)</li>
@@ -200,7 +88,7 @@
 					</ul>
 				</div>
 
-				<div class="entry">Senior Developer at <a href="https://www.textecnologia.com.br/" target="_blank" rel="noreferrer">Tex Tecnologia</a></div>
+				<div class="entry">Senior Developer at <a href="https://www.textecnologia.com.br/" contenteditable="false" target="_blank" rel="noreferrer">Tex Tecnologia</a></div>
 				<div class="description">
 					<ul>
 						<li>OCR: autofilling form from an input PDF</li>
@@ -210,7 +98,7 @@
 					</ul>
 				</div>
 
-				<div class="entry">Intern at <a href="https://sesin.fr/">Sesin</a></div>
+				<div class="entry">Intern at <a href="https://sesin.fr/" contenteditable="false" target="_blank" rel="noreferrer">Sesin</a></div>
 				<div class="description">
 					<ul>
 						<li>PHP (proprietary framework)</li>
@@ -282,7 +170,7 @@
 				<div class="description">
 					<p>Hangman is a Discord bot that allows playing Hangman on Discord. Its primary purpose is to help people learn English.</p>
 					<p>The bot is available in probably the biggest Discord community for people who want to learn languages (over 5k members). The community is a reminiscent of the old language websites SharedTalk and HelloLingo.</p>
-					<p>The bot is integrated with the <a href="https://www.collinsdictionary.com/" target="_blank" rel="noreferrer">Collins Dictionary</a> API.</p>
+					<p>The bot is integrated with the <a href="https://www.collinsdictionary.com/" contenteditable="false" target="_blank" rel="noreferrer">Collins Dictionary</a> API.</p>
 					<p>Stack:</p>
 					<ul>
 						<li>Deno (hosted at Heroku inside a Docker container)</li>
@@ -291,15 +179,15 @@
 						<li>Redis (redis.com cloud)</li>
 					</ul>
 					<br/>
-					<p>Discord server: <a href="https://discord.gg/NSEF7JWEgz" target="_blank" rel="noreferrer">https://discord.gg/NSEF7JWEgz</a>.</p>
-					<p>Repository: <a href="https://github.com/Leokuma/hangman" target="_blank" rel="noreferrer">https://github.com/Leokuma/hangman</a>.</p>
+					<p>Discord server: <a href="https://discord.gg/NSEF7JWEgz" contenteditable="false" target="_blank" rel="noreferrer">https://discord.gg/NSEF7JWEgz</a>.</p>
+					<p>Repository: <a href="https://github.com/Leokuma/hangman" contenteditable="false" target="_blank" rel="noreferrer">https://github.com/Leokuma/hangman</a>.</p>
 				</div>
 
 				<div class="entry">WhatsApp Chatbot</div>
 				<div class="description">
-					<p>Browser-based MVC chatbot integrated with <a href="https://www.cleverbot.com/" target="_blank" rel="noreferrer">Cleverbot</a>.</p>
+					<p>Browser-based MVC chatbot integrated with <a href="https://www.cleverbot.com/" contenteditable="false" target="_blank" rel="noreferrer">Cleverbot</a>.</p>
 					<p>The purpose of this project was to experiment with the MVC architecture and have fun.</p>
-					<p>Repository: <a href="https://github.com/JSquadders/ChatBot" target="_blank" rel="noreferrer">https://github.com/JSquadders/ChatBot</a>.</p>
+					<p>Repository: <a href="https://github.com/JSquadders/ChatBot" contenteditable="false" target="_blank" rel="noreferrer">https://github.com/JSquadders/ChatBot</a>.</p>
 				</div>
 			</div>
 		</section>

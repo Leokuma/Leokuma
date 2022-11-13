@@ -1,0 +1,11 @@
+@media print {
+	:root {
+		--background-color: none;
+		--page-margin: 0;
+		--page-shadow: none;
+	}
+
+	.flag {
+		display: none;
+	}
+}

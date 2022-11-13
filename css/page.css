@@ -1,0 +1,30 @@
+#page {
+	background-color: var(--page-color);
+	box-shadow: var(--page-shadow);
+	margin: auto;
+	max-width: 1000px;
+	padding: var(--page-margin);
+	position: relative;
+}
+
+.lang-selector {
+	position: absolute;
+	right: var(--page-margin);
+}
+
+.flag {
+	appearance: none;
+	background-size: 100% 100%;
+	cursor: pointer;
+	height: 1.5rem;
+	width: 2.3rem;
+}
+
+.flag:not(:last-of-type) {
+	margin-right: .3rem;
+}
+
+.flag:checked {
+	outline: solid .2rem var(--highlight-color);
+	outline-offset: .15rem;
+}
