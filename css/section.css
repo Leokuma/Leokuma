@@ -16,7 +16,7 @@
 	padding: 10px;
 }
 
-.topic-table > .entry {
+.topic-table > .label {
 	border-right: var(--border);
 	font-weight: bold;
 	text-align: end;

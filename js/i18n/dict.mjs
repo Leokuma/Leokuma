@@ -1,5 +1,5 @@
 export async function download(lang) {
-	return (await import(`/js/i18n/dicts/${lang}.mjs`)).default;
+	return (await import(`./dicts/${lang}.mjs`)).default;
 }
 
 export function apply(dict) {
